@@ -34,7 +34,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
         border-r 
         border-gray-200 
       `,
-        !isOpen ? "hidden" : "block w-full left-0" //I added the ! to close it
+        isOpen ? "hidden" : "block w-full left-0"
       )}
     >
       <div className="px-5">
