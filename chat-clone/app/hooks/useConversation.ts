@@ -4,13 +4,15 @@ import { useMemo } from "react";
 const useConversation = () => {
   const params = useParams();
 
+  //I have to set "conversation ld" here as well
+
   const conversationId = useMemo(() => {
-    if (!params?.conversationId) {
+    if (!params?.conversationld) {
       return "";
     }
 
-    return params.conversationId as String;
-  }, [params?.conversationId]);
+    return params.conversationld as string;
+  }, [params?.conversationld]);
 
   const isOpen = useMemo(() => !!conversationId, [conversationId]);
 
