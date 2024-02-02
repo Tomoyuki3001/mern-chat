@@ -10,8 +10,6 @@ import { CldUploadButton } from "next-cloudinary";
 const Form = () => {
   const { conversationId } = useConversation();
 
-  console.log("conversation Id", { conversationId });
-
   const {
     register,
     handleSubmit,
