@@ -10,6 +10,7 @@ import Input from "../inputs/Input";
 import Image from "next/image";
 import { CldUploadButton } from "next-cloudinary";
 import Button from "../Button";
+import Profile from "../../../public/images/placeholder.png";
 
 interface SettingsModalProps {
   isOpen?: boolean;
@@ -86,9 +87,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     width="48"
                     height="48"
                     className="rounded-full"
-                    src={
-                      image || currentUser?.image || "/images/placeholder.png"
-                    }
+                    src={image || currentUser?.image || Profile}
                     alt="Avatar"
                   />
                   <CldUploadButton
