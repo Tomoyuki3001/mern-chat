@@ -53,7 +53,7 @@ const Form = () => {
         <MessageInput
           id="message"
           register={register}
-          errors={errors}
+          errros={errors}
           required
           placeholder="Write a message"
         />
